@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "io.github.iampoul.sysstats",
+  "name": "System Stats",
+  "version": "1.0.0",
+  "author": "iampoul",
+  "license": "MIT",
+  "description": "System monitoring: CPU, memory, disk, temperature, fans, network, and uptime.",
+  "kinds": ["bar-widget"],
+  "entryPoints": {
+    "barWidget": "BarWidget.qml"
+  },
+  "barWidget": {
+    "displayName": "System Stats",
+    "description": "CPU, memory, disk, temperature, fans, network, and uptime",
+    "category": "System",
+    "allowMultiple": false,
+    "defaultSection": "right",
+    "defaults": {
+      "refreshMs": 2000,
+      "barFormat": "temp cpu mem"
+    },
+    "schema": []
+  }
+}
